@@ -1,0 +1,6 @@
+{
+  "name": "@coderlzw/request/axios",
+  "private": "true",
+  "main": "../dist/fetch",
+  "types": "../dist/types/fetch"
+}

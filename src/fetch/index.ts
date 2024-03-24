@@ -12,7 +12,6 @@ class FetchRequest {
     response: undefined,
     requestError: undefined,
     responseError: undefined
-
   }
 
   /**
