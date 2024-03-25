@@ -100,6 +100,11 @@ class FetchRequest {
       throw rejectResponse ?? response
     }
 
+    if (!response.ok) {
+      // eslint-disable-next-line @typescript-eslint/no-throw-literal
+      throw response
+    }
+
     /**
          * 如果请求成功，且存在响应拦截器，则执行响应拦截器
          */
@@ -108,11 +113,6 @@ class FetchRequest {
       if (interceptedResponse != null) {
         response = interceptedResponse
       }
-    }
-
-    if (!response.ok) {
-      // eslint-disable-next-line @typescript-eslint/no-throw-literal
-      throw response
     }
 
     return response
