@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "declaration": true,
+    "outDir": "./dist",
+    "removeComments": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "declarationDir": "./dist"
+  },
+  "include": [
+    "src",
+    ".eslintrc.js"
+  ],
+  "exclude": [
+    "node_modules",
+  ]
+}

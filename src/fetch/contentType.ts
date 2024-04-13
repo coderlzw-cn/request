@@ -1,0 +1,16 @@
+export enum ContentType {
+  JSON = 'application/json',
+  FORM = 'application/x-www-form-urlencoded',
+  MULTIPART = 'multipart/form-data',
+  TEXT = 'text/plain',
+  HTML = 'text/html',
+  XML = 'text/xml',
+  JAVASCRIPT = 'application/javascript',
+  CSS = 'text/css',
+  IMAGE = 'image/*',
+  AUDIO = 'audio/*',
+  VIDEO = 'video/*',
+  FONT = 'font/*',
+  STREAM = 'application/octet-stream',
+  ALL = '*/*',
+}

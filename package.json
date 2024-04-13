@@ -1,0 +1,47 @@
+{
+  "name": "@coderlzw/request",
+  "version": "0.1.0",
+  "description": "A simple request library that only supports browsers and encapsulates fetch and axios",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "fetch",
+    "request",
+    "axios"
+  ],
+  "author": "梁志伟",
+  "repository": {
+    "url": "git+https://github.com/coderlzw-cn/request.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
+  "scripts": {
+    "init": "tsc --init",
+    "clean": "rimraf -V dist",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "build": "npm run clean && tsc",
+    "push": "npm run build && yalc publish --push",
+    "pkg:fix": "npm pkg fix",
+    "preversion": "run-s lint:fix lint build pkg:fix",
+    "prepublish": "git add -A .",
+    "postpublish": "git push && git push --tags"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0 || ^16.0.0 ",
+    "eslint-plugin-promise": "^6.0.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^5.0.5",
+    "typescript": "5.3.3"
+  }
+}
