@@ -30,6 +30,7 @@ module.exports = {
     '@typescript-eslint/no-invalid-void-type': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-throw-literal': 'off',
-    '@typescript-eslint/no-unsafe-argument': 'warn'
+    '@typescript-eslint/no-unsafe-argument': 'warn',
+    "@typescript-eslint/strict-boolean-expressions": "off",
   }
 }

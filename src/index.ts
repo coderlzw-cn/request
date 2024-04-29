@@ -1,5 +1,5 @@
-import FetchRequest from './fetch'
+import axios from 'axios'
 
 export {
-  FetchRequest
+  axios
 }
